@@ -10,7 +10,7 @@
   </parent>
   <groupId>demo</groupId>
   <artifactId>bowling-score</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.1.0-SNAPSHOT</version>
   <name>bowling-score</name>
   <description>Demo project for Spring Boot</description>
   <properties>
