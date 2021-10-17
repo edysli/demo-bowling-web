@@ -1,4 +1,4 @@
-package com.example.bowlingscore;
+package demo.bowlingscore.web;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
