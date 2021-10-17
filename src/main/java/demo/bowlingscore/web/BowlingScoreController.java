@@ -1,5 +1,6 @@
 package demo.bowlingscore.web;
 
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,7 +13,7 @@ import demo.bowlingscore.domain.BowlingGame;
 public class BowlingScoreController {
 
   @PostMapping
-  public ScoringResponse compute(@RequestBody ScoringRequest request) {
+  public ScoringResponse compute(@RequestBody @Validated ScoringRequest request) {
     var g = new BowlingGame();
     for (int p : request.getPins()) {
       g.roll(p);
